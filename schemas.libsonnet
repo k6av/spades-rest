@@ -22,9 +22,9 @@
         '$ref': '#/components/schemas/ServerEndpoint',
       },
       updated: {
-        type: 'string',
-        format: 'date-time',
-        description: 'Time when server information was last updated',
+        type: 'integer',
+        format: 'int64',
+        description: 'Time when server information was last updated as a Unix timestamp',
         readOnly: true,
       },
       status: {
@@ -123,9 +123,9 @@
         example: 'Bar map',
       },
       updated: {
-        type: 'string',
-        format: 'date-time',
-        description: 'Time the map was last updated',
+        type: 'integer',
+        format: 'int64',
+        description: 'Time the map was last updated as a Unix timestamp',
         readOnly: true,
       },
       version: {
@@ -194,9 +194,9 @@
         example: 'Baz gamemode',
       },
       updated: {
-        type: 'string',
-        format: 'date-time',
-        description: 'Time the gamemode was last updated',
+        type: 'integer',
+        format: 'int64',
+        description: 'Time the gamemode was last updated as a Unix timestamp',
         readOnly: true,
       },
       version: {
